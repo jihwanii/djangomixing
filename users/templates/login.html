@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <div style="text-align: center; max-width: 500px; margin: 4rem auto">
+        <div>
+            <h4>LOGIN</h4>
+        </div>
+        <div>
+            <form action="{% url 'users:login' %}" method="post">
+                {% csrf_token %}
+                {{form.as_p}}
+                <input type="submit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

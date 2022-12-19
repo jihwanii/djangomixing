@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+</head>
+<body>
+    <h1>test page</h1>
+    <div class="container">
+        <div class="row row1">
+            <ul class="largenav pull-right">
+                <li class="upper-links dropdown"><a class="links" href="">Login & SignUp</a>
+                    <ul class="dropdown-menu">
+                        <li class="profile-li"><a class="profile-links" href="{% url 'login' %}">Login</a></li>
+                        <li class="profile-li"><a class="profile-links" href="{% url 'register_main' %}">Signup</a></li>
+                        <li class="profile-li"><a class="profile-links" href="{% url 'product_register' %}">Product register</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
